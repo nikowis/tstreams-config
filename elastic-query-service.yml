@@ -28,3 +28,10 @@ springdoc:
 
 security:
   paths-to-ignore: /api-docs
+
+retry-config:
+  initial-interval-ms: 1000
+  max-interval-ms: 10000
+  multiplier: 2.0
+  maxAttempts: 3
+  sleep-time-ms: 2000
